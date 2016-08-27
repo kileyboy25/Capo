@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Capo</string>
+    <string-array name="school_names">
+        <item>Udacity</item>
+        <item>University of fuckers!</item>
+        <item>Trump University</item>
 
+    </string-array>
+    <string name="facebook_button_text">Sign up with facebook</string>
+    <string name="welcome_login_page">Welcome to CAPO!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="company_name">Broadgames</string>
+    <string name="copyright_text">all rights reserved</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 </resources>
