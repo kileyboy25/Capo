@@ -10,12 +10,13 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:parentActivityName="com.broadgames.capo.HomeScreenActivity">
+            android:parentActivityName=".HomeScreenActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.broadgames.capo.HomeScreenActivity" />
         </activity>
-        <activity android:name=".HomeScreenActivity"
+        <activity
+            android:name=".HomeScreenActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,11 +24,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity"
-            android:parentActivityName="com.broadgames.capo.LoginActivity">
+        <activity
+            android:name=".SignUpActivity"
+            android:parentActivityName=".LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.broadgames.capo.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".ProposeRideActivity"
+            android:label="@string/title_activity_propose_ride"
+            android:parentActivityName=".HomeScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.broadgames.capo.HomeScreenActivity" />
+        </activity>
+        <activity
+            android:name=".RequestRideActivity"
+            android:parentActivityName=".HomeScreenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.broadgames.capo.HomeScreenActivity" />
         </activity>
     </application>
 

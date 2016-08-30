@@ -21,5 +21,23 @@ public class HomeScreenActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button proposeRideButton = (Button) findViewById(R.id.home_screen_propose_ride);
+        proposeRideButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ProposeRideActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button requestRideButton = (Button) findViewById(R.id.home_screen_request_ride);
+        requestRideButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RequestRideActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
